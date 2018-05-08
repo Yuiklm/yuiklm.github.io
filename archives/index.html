@@ -1,170 +1,210 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
-  <meta charset="utf-8">
-  
-
-  
-  <title>Archives | Hexo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    
+    <title>archive | conci</title>
+    <meta property="og:type" content="website">
 <meta property="og:title" content="Hexo">
 <meta property="og:url" content="http://yoursite.com/archives/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:locale" content="default">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo">
-  
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png">
-  
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
-  <link rel="stylesheet" href="/css/style.css">
+    
+    
+        <link rel="icon" href="./favicon.ico">
+    
+    <link rel="stylesheet" href="/css/concise.css">
+    <script src="/js/concise.js"></script>
+    <script>
+        (function(){
+            var useragent=navigator.userAgent;
+            console.log(navigator,useragent);
+            var isM;
+            if(useragent.indexOf('iPhone')!=-1){
+                isM=true;
+            }else if(useragent.indexOf('Android ')!=-1){
+                isM=true;
+            }else if(useragent.indexOf('iPad')!=-1){
+                isM=true;
+            }else{
+                isM=false;
+            }
+            if(isM){
+                document.documentElement.style.fontSize=document.documentElement.clientWidth/375*100+'px';
+                window.onresize=function(){
+                    document.documentElement.style.fontSize=document.documentElement.clientWidth/375*100+'px';
+                };
+            }
+        })();
+    </script>
+    
+    <script src="http://opu30aljn.bkt.clouddn.com/jquery.js"></script>
+    
+    <script src="/js/script.js"></script>
 </head>
-
 <body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
-      </h1>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
-      </div>
-    </div>
-  </div>
+<input type="checkbox" id="left-information">
+<div id="wrapper">
+    <div id="bgg"></div>
+    <header id="header">
+    <nav id="nav" class="clearfix">
+        <label for="left-information"></label>
+        <ul class='nav-left'>
+            <li><a href="/">conci</a></li>
+        </ul>
+        <input type="checkbox" id="header-right-nav">
+        <ul class="clearfix nav-right">
+            
+            <li><a href="/">Home</a></li>
+            
+            <li><a href="/archives">Archives</a></li>
+            
+            <li><a href="/tags">tags</a></li>
+            
+        </ul>
+        <label for="header-right-nav"><i></i></label>
+    </nav>
 </header>
-      <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2018/05/08/hello-world/" class="archive-article-date">
-  <time datetime="2018-05-08T14:08:34.087Z" itemprop="datePublished">May 8</time>
-</a>
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/05/08/hello-world/">Hello World</a>
-    </h1>
-  
-
-    </header>
-  </div>
+    <article id="logo">
+    <div id="logo-content">
+        <header>
+            <a href="">conci.theme<b>hexo</b></a>
+        </header>
+        <p>
+            conci version 1.0.0<br>
+            Simple and practical hexo personal blog theme.<br>
+            The freedom to choose
+        </p>
+    </div>
 </article>
-  
-  
-    </div></section>
-  
-
-
-</section>
+    <div id="main" class="clearfix">
+        <section id="main-left" class="left">
+            
+    
         
-          <aside id="sidebar">
-  
+
+        <section id="archive" class="clearfix">
+            <header>
+                articles<span>all</span>
+            </header>
+            
+                
+                    <article class="archive-page">
+                        <header><a href="/2018/05/08/hello-world/">Hello World</a></header>
+                        <time>2018,05,08</time>
+                    </article>
+                
+                
+            
+        </section>
     
 
-  
-    
 
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">May 2018</a></li></ul>
+        </section>
+        <section id="main-right" class="right">
+            <div class="my">
+    <div class="my-information">
+        <div class="my-img">
+            <img src="http://ooa3lxrpg.bkt.clouddn.com/b.jpg?imageView2/1/w/120/h/120/q/75" rel="图片">
+            <a href="/"></a>
+        </div>
+        <span>cc</span>
+        <p>求知若饥 虚心若愚</p>
     </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
+    <p class="my-social">
         
-          <li>
-            <a href="/2018/05/08/hello-world/">Hello World</a>
-          </li>
+            <a href="/" class="my-social-me1">github</a>
         
-      </ul>
+            <a href="/" class="my-social-me3">twitter</a>
+        
+            <a href="/" class="my-social-me3">weibo</a>
+        
+            <a href="/" class="my-social-me5">豆瓣</a>
+        
+            <a href="/" class="my-social-me2">知乎</a>
+        
+    </p>
+    <div class="my-post">
+        <a href="/archives">
+            <strong>1</strong><br>
+            <span>posts</span>
+        </a>
+        <a href="/categories">
+            <strong>0</strong><br>
+            <span>categories</span>
+        </a>
+        <a href="/tags">
+            <strong>0</strong><br>
+            <span>tags</span>
+        </a>
     </div>
-  </div>
-
-  
-</aside>
+    <div class="search-rss">
+        <div class="my-search">
+            <a href="javascript:void(0)" id ='my-search-a' class="popup-trigger">search</a>
+        </div>
         
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2018 John Doe<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
-  </div>
+    <div class="my-links">
+        <ul class="clearfix">
+            
+            <li>
+                <a href="/">
+                    <img src="http://ooa3lxrpg.bkt.clouddn.com/timg.jpg">
+                    <p>ccblog</p>
+                </a>
+            </li>
+            
+            <li>
+                <a href="/">
+                    <img src="http://ooa3lxrpg.bkt.clouddn.com/timg%20%282%29.jpg">
+                    <p>boc</p>
+                </a>
+            </li>
+            
+            <li>
+                <a href="/">
+                    <img src="http://ooa3lxrpg.bkt.clouddn.com/timg%20%283%29.jpg">
+                    <p>haha</p>
+                </a>
+            </li>
+            
+            <li>
+                <a href="/">
+                    <img src="http://ooa3lxrpg.bkt.clouddn.com/timg%20%283%29.jpg">
+                    <p>pp</p>
+                </a>
+            </li>
+            
+            <li>
+                <a href="/">
+                    <img src="http://ooa3lxrpg.bkt.clouddn.com/timg%20%281%29.jpg">
+                    <p>oop</p>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="hot-page">
+        
+    </div>
+</div>
+        </section>
+    </div>
+    <footer id="footer">
+    <p>© 2017  cc | 
+        </iframe><br/>
+        concise theme, this world is mine.  | cc'blog | Fork me on Github
+        
+    </p>
 </footer>
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-
-
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-  <script src="/fancybox/jquery.fancybox.pack.js"></script>
-
-
-<script src="/js/script.js"></script>
+</div>
+<label for="left-information"></label>
 
 
 
-  </div>
+
 </body>
 </html>
