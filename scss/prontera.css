@@ -395,7 +395,8 @@ code {
   padding: 3px 5px;
   color: #e96900;
   border-radius: 2px;
-  white-space: inherit; }
+  white-space: inherit;
+  font-size: 12px; }
 
 iframe, video {
   max-width: 100%;
@@ -459,7 +460,8 @@ code {
   padding: 3px 5px;
   color: #e96900;
   border-radius: 2px;
-  white-space: inherit; }
+  white-space: inherit;
+  font-size: 12px; }
 
 iframe, video {
   max-width: 100%;
@@ -675,7 +677,7 @@ header .component-nav-item {
 code,
 pre {
   border: 1px solid #eee;
-  font-size: 1em;
+  font-size: 12px;
   background-color: #fcfcfc;
   font-family: 'Roboto Mono', Monaco, courier, monospace; }
 
@@ -904,7 +906,8 @@ code {
   padding: 3px 5px;
   color: #e96900;
   border-radius: 2px;
-  white-space: inherit; }
+  white-space: inherit;
+  font-size: 12px; }
 
 iframe, video {
   max-width: 100%;
@@ -1033,7 +1036,8 @@ code {
   padding: 3px 5px;
   color: #e96900;
   border-radius: 2px;
-  white-space: inherit; }
+  white-space: inherit;
+  font-size: 12px; }
 
 iframe, video {
   max-width: 100%;
