@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="ennisk.github.io/"/>
-  <updated>2018-06-21T15:26:27.792Z</updated>
+  <updated>2018-06-22T17:48:16.770Z</updated>
   <id>ennisk.github.io/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="ennisk.github.io/2018/06/21/lenovo-g400-hackintosh-guide/"/>
     <id>ennisk.github.io/2018/06/21/lenovo-g400-hackintosh-guide/</id>
     <published>2018-06-21T15:21:27.000Z</published>
-    <updated>2018-06-21T15:26:27.792Z</updated>
+    <updated>2018-06-22T17:48:16.770Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><ul><li>笔记本： 联想 G400</li><li>U 盘：SanDisk 酷铄 CZ73</li><li>内存条：金士顿 DDR3L 1600Mhz  4G x1</li><li>无线网卡&amp;蓝牙：博通 BCM94352HMB</li></ul><h5 id="1-BIOS-移除白名单"><a href="#1-BIOS-移除白名单" class="headerlink" title="1. BIOS 移除白名单"></a>1. BIOS 移除白名单</h5><p>在拿到 <strong>博通BCM 94352HMB</strong> 和  <strong>内存条</strong> 当天，就都装了上去<br> <a id="more"></a></p><p> <img src="http://wx2.sinaimg.cn/mw690/699458aegy1fsj7cdyv76j21100o0hdu.jpg" width="500"></p><p>提示 <em>Unauthorized network card is plugged….</em>  （当场 <em>白仁面</em> 去），意识到是联想坑爹的白名单限制无线网卡的型号，于是默默的打开 <strong>google</strong> … </p>]]></content>
+    <content type="html"><![CDATA[<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><ul><li>笔记本： 联想 G400</li><li>U 盘：SanDisk 酷铄 CZ73</li><li>内存条：金士顿 DDR3L 1600Mhz  4G x1</li><li>无线网卡&amp;蓝牙：博通 BCM94352HMB</li></ul><h4 id="1-BIOS-移除白名单"><a href="#1-BIOS-移除白名单" class="headerlink" title="1. BIOS 移除白名单"></a>1. BIOS 移除白名单</h4><p>在拿到 <strong>博通BCM 94352HMB</strong> 和  <strong>内存条</strong> 当天，就都装了上去<br> <a id="more"></a></p><p> <img src="http://wx2.sinaimg.cn/mw690/699458aegy1fsj7cdyv76j21100o0hdu.jpg" width="500"></p><p>提示 <em>Unauthorized network card is plugged….</em>  （当场 <em>白仁面</em> 去），意识到是联想坑爹的白名单限制无线网卡的型号，于是默默的打开 <strong>google</strong> … </p><p>于是，很快搜到 <a href="http://bbs.zol.com.cn/nbbbs/d160_143691.html" target="_blank" rel="noopener">Y400/Y500 史上最详细 英特尔7260AC+4.0蓝牙 究极白名单完美蓝牙改造方案</a> 、<a href="http://bbs.pcbeta.com/viewthread-1593118-1-1.html" target="_blank" rel="noopener">LENOVO G400S 刷bios去除白名单</a> ，大概阅读了下，发现并不复杂，几个步骤即可。</p><h5 id="准备工具："><a href="#准备工具：" class="headerlink" title="准备工具："></a>准备工具：</h5><p> <img src="http://wx1.sinaimg.cn/mw690/699458aegy1fskh0pa47bj21d00ugn2w.jpg" width="550"></p><ul><li>78cn25ww ：BIOS 最新版</li><li>启动U盘制作 ： 制作 U 盘为 DOS 启动盘</li><li>insyde EzH2O中文版 ： 编辑 BIOS ，移除白名单模块</li><li>tlzh：备份、写入 BIOS</li></ul><h5 id="简单步骤："><a href="#简单步骤：" class="headerlink" title="简单步骤："></a>简单步骤：</h5><p>简单讲，需要把 BIOS 的白名单模块去除，这样开机的时候就不会检测无线网卡，可以顺利进入系统；把白名单去除需要把 BIOS 备份出来，然后用 <strong>insyde EzH2O</strong> 把模块去除，然后将修改后的 BIOS 写入，备份和写入在 DOS 环境工作。</p><p> <img src="http://wx4.sinaimg.cn/mw690/699458aegy1fskhgwvmkdj21kw16ou0x.jpg" width="500"></p><p>值得一提的是，在使用 <strong>insyde EzH2O</strong> 移除白名单模块的时候，因为上述文章机型并不是 G400 ，所以移除的时候不太确定文中的 <code>GUID &quot;11D378C2-B472-412F-AD87-1BE4CD8B33A6&quot;</code> 是不是对应 G400 的无线网卡白名单模块，但是网上搜不到 G400 的，加上都是联想的机器，想着应该都是一样的，就直接删除这个模块，这个过程忘记截图拍照… 最终成功开机，意味着白名单模块成功移除，win 系统下 wifi 📶 正常。</p>]]></content>
     
     <summary type="html">
     
@@ -33,7 +33,7 @@
 &lt;li&gt;内存条：金士顿 DDR3L 1600Mhz  4G x1&lt;/li&gt;
 &lt;li&gt;无线网卡&amp;amp;蓝牙：博通 BCM94352HMB&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h5 id=&quot;1-BIOS-移除白名单&quot;&gt;&lt;a href=&quot;#1-BIOS-移除白名单&quot; class=&quot;headerlink&quot; title=&quot;1. BIOS 移除白名单&quot;&gt;&lt;/a&gt;1. BIOS 移除白名单&lt;/h5&gt;&lt;p&gt;在拿到 &lt;strong&gt;博通BCM 94352HMB&lt;/strong&gt; 和  &lt;strong&gt;内存条&lt;/strong&gt; 当天，就都装了上去&lt;br&gt;
+&lt;h4 id=&quot;1-BIOS-移除白名单&quot;&gt;&lt;a href=&quot;#1-BIOS-移除白名单&quot; class=&quot;headerlink&quot; title=&quot;1. BIOS 移除白名单&quot;&gt;&lt;/a&gt;1. BIOS 移除白名单&lt;/h4&gt;&lt;p&gt;在拿到 &lt;strong&gt;博通BCM 94352HMB&lt;/strong&gt; 和  &lt;strong&gt;内存条&lt;/strong&gt; 当天，就都装了上去&lt;br&gt;
     
     </summary>
     
