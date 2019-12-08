@@ -13,7 +13,7 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: ennisk.github.io
+url: yuiklm.github.io
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -79,7 +79,7 @@ theme: prontera
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git 
-  repository: https://github.com/ennisk/ennisk.github.io.git 
+  repository: https://github.com/yuiklm/yuiklm.github.io.git 
   branch: master 
 
 #mypage:
